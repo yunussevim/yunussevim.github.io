@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+ <title> Contact with Me </title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+ 
+</head>
+<body align="center" style="background-image: url(img/bg.jpg); background-size: cover;background-repeat: no-repeat" >
+
+<br>
+<center>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+		    	<span class ="icon-bar"></span>
+		    	<span class ="icon-bar"></span>
+		    	<span class ="icon-bar"></span>
+		    </button>
+			<a href="index.html" class="navbar-brand" >My Site</a>
+		</div>
+		<div class="collapse navbar-collapse" id="mainNavBar">
+			<ul class="nav navbar-nav">
+				
+				<li><a   href="aboutme.html" >About Me</a></li>
+				<li><a href="hobies.html">My Hobies</a></li>
+				<li><a href="myPhotos.html">My Photos</a></li>
+				<li class="active"><a  href="contact.html">Contact with Me</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</nav>
+<table  align="right">
+			<tr>
+				<th data-toggle="modal" data-target="#popUpWindow"><a href="#">Login</a></th>
+				<div class="modal fade" id="popUpWindow">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary btn-block">Log In</button>
+			</div>
+		</div>
+		</div>
+	</div>
+				<th>/</th>
+				<th><a href="registerForm.html">Register</a></th>
+			</tr>
+			
+		</table>
+
+<br><br>
+<hr>
+<h1 > Contact with Me </h1></center>
+<br>
+<div class="container-fluid">
+   
+    <div class="col-lg-3"></div>
+	<div class="well col-lg-5">
+	<div style="padding-left: 100px">
+		<form action="dot.php" method="post">
+Name*:&nbsp&nbsp&nbsp<input type="text" name="name_of_user" required><br><br>
+E-mail*:&nbsp&nbsp<input type="email" name="mail_of_user" required> <br><br>
+tel:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="tel" name="tel_of_user"> <br><br>
+subject*:&nbsp&nbsp&nbsp <select id="subjects" required>
+			       <option value="Career">Career</option>
+			       <option value="InterShip">InterShip</option>
+			       <option value="job application">job application</option>
+			       <option value="slice-of-life">slice-of-life</option>
+			       <option value="recommends">recommends</option>
+			       <option value="others">others</option>
+				</select><br><br>
+Text:<br><textarea>
+Write here to send it to me.
+</textarea>
+<br>
+<input type="submit" value="Send" onclick="return alert('Sended')">
+</form>
+</div>
+	</div>
+	<div class="col-lg-4" >
+		<div align="center" style="margin-top: 50px">
+			<img src="img/face_insta_icon.png"  width="200" height="125" usemap="#links"><br>
+           <map name="links">
+              <area shape="rect" coords="0,0,100,150" href="https://www.instagram.com/a.yunussevim/?hl=tr" alt="instagram">
+	       <area shape="rect" coords="100,0,200,150" href="https://www.facebook.com/ysevimfenerim" alt="facebook">
+          </map>
+		</div>
+		
+		<div align="center">
+			<a href="ays@anadolu.edu.tr">ays@anadolu.edu.tr</a><br>
+            <a href="yunussevim@icloud.com">yunussevim@icloud.com</a><br>  
+		</div>
+	</div>
+</div>
+<br><br><br>
+<hr>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

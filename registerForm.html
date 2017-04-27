@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+ <title> Register </title>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+ 
+</head>
+<body align="center" style="background-image: url(img/bg.jpg); background-size: cover;background-repeat: no-repeat" >
+<center>
+<br>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+		    	<span class ="icon-bar"></span>
+		    	<span class ="icon-bar"></span>
+		    	<span class ="icon-bar"></span>
+		    </button>
+			<a href="index.html" class="navbar-brand" >My Site</a>
+		</div>
+		<div class="collapse navbar-collapse" id="mainNavBar">
+			<ul class="nav navbar-nav">
+				
+				<li><a  href="aboutme.html" >About Me</a></li>
+				<li><a href="hobies.html">My Hobies</a></li>
+				<li><a href="myPhotos.html">My Photos</a></li>
+				<li><a href="contact.html">Contact with Me</a></li>
+			</ul>
+		</div>
+		
+	</div>
+</nav>
+<table  align="right">
+			<tr>
+				<th data-toggle="modal" data-target="#popUpWindow"><a href="#">Login</a></th>
+				<div class="modal fade" id="popUpWindow">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary btn-block">Log In</button>
+			</div>
+		</div>
+		</div>
+	</div>
+				<th>/</th>
+				<th><a href="registerForm.html">Register</a></th>
+			</tr>
+			
+		</table>
+
+<br><br>
+<hr>
+<h1 > Register </h1></center>
+<br>
+<div class="container-fluid" >
+<div class="well">
+<div style="padding-left: 150px">
+<form action="dot.php" method="post" enctype="multipart/form-data" role="form">
+Name*:&nbsp&nbsp&nbsp<input type="text" name="name_of_user" required><br><br>
+E-mail*:&nbsp&nbsp<input type="email" name="mail_of_user" required> <br><br>
+tel:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="tel" name="tel_of_user"> <br><br>
+Gender: <input type="radio"  name="sex "value="male"> Male
+       <input type="radio" value="female" name="sex"> Female<br><br>
+Birthday*:<input type="date" value="birthday" required> <br><br> 
+Photo:<input type="file" value="photo"> <br><br> 
+City:&nbsp&nbsp&nbsp <select id="cities" >
+			       <option value="Izmir">Izmir</option>
+			       <option value="Istanbul">Istanbul</option>
+			       <option value="Ankara">Ankara</option>
+			       <option value="Mugla">Mugla</option>
+			       <option value="Eskisehir">Eskisehir</option>
+			       <option value="Hatay">Hatay</option>
+				</select><br><br>
+Address:<textarea> </textarea>
+<br><br>
+Interests:<input type="checkbox" value="web">web
+          <input type="checkbox" value="mobile">mobile
+          <input type="checkbox" value="software">software
+          <input type="checkbox" value="hardware">hardware
+<br><br>
+About Me:<textarea> </textarea>
+<br><br>
+<input type="submit" value="Register" onclick="return alert('Sended')">
+</form>
+</div>
+</div>	
+</div>
+<br><br><br>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
